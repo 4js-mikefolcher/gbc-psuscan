@@ -1,0 +1,54 @@
+{
+  "customizationSuffix": "psuscan",
+  "themes": [{
+      "name": "haze",
+      "title": "Purple Haze",
+      "uses": ["platform/browser", "platform/desktop", "haze"]
+    },
+    {
+      "name": "haze-xl",
+      "title": "Purple Haze XL",
+      "uses": ["platform/browser", "platform/desktop", "haze-xl"]
+    },
+    {
+      "name": "tomato",
+      "title": "Red Tomato",
+      "uses": ["platform/browser", "platform/desktop", "tomato"]
+    },
+    {
+      "name": "tomato-xl",
+      "title": "Red Tomato XL",
+      "uses": ["platform/browser", "platform/desktop", "tomato-xl"]
+    },
+    {
+      "name": "grass",
+      "title": "Green Grass",
+      "uses": ["platform/browser", "platform/desktop", "grass"]
+    },
+    {
+      "name": "grass-xl",
+      "title": "Green Grass XL",
+      "uses": ["platform/browser", "platform/desktop", "grass-xl"]
+    },
+    {
+      "name": "ocean",
+      "title": "Blue Ocean",
+      "uses": ["platform/browser", "platform/desktop", "ocean"]
+    },
+    {
+      "name": "ocean-xl",
+      "title": "Blue Ocean XL",
+      "uses": ["platform/browser", "platform/desktop", "ocean-xl"]
+    },
+    {
+      "name": "charcoal",
+      "title": "Black Charcoal",
+      "uses": ["platform/browser", "platform/desktop", "charcoal"]
+    },
+    {
+      "name": "charcoal-xl",
+      "title": "Black Charcoal XL",
+      "uses": ["platform/browser", "platform/desktop", "charcoal-xl"]
+    }
+  ]
+}

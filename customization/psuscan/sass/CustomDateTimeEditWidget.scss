@@ -1,0 +1,7 @@
+.is-today .pika-button {
+    color: $palette-primary-600 !important;
+}
+.is-selected .pika-button {
+    background: $palette-primary-200 !important;
+    box-shadow: inset 0 1px 3px $palette-primary-600 !important;
+}

@@ -1,0 +1,42 @@
+/* Spinner Colors */
+$spinner-size: 150px;
+$spinner-base-color: $palette-primary-900;
+$spinner-offset-color: $palette-primary-50;
+$spinner-spin-duration: 750ms;
+$spinner-spin-delay: 1s;
+ 
+.processing .loading-bar {
+    position: fixed;
+    z-index: 9999;
+    top: 40%;
+    left: 50%;
+ 
+    border-radius: 50%;
+    width: $spinner-size;
+    height: $spinner-size;
+    border: .5rem solid $spinner-offset-color;
+    border-top-color: $spinner-base-color;
+    animation: spin-loader $spinner-spin-duration $spinner-spin-delay infinite linear;
+    opacity: 0;
+    &--double {
+      border-style: double;
+      border-width: .5rem;
+    }
+}
+ 
+@keyframes spin-loader {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.75;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.75;
+  }
+
+}
+ 
+.processing:not(.inactiveWindow) .loading-bar {
+        -webkit-animation: spin-loader $spinner-spin-duration $spinner-spin-delay infinite;
+        animation: spin-loader $spinner-spin-duration $spinner-spin-delay infinite;
+}

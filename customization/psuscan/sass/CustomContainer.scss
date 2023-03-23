@@ -1,0 +1,153 @@
+/*
+ * FOURJS_START_COPYRIGHT(D,2018)
+ * Property of Four Js*
+ * (c) Copyright Four Js 2018, 2023. All Rights Reserved.
+ * * Trademark of Four Js Development Tools Europe Ltd
+ *   in the United States and elsewhere
+ *
+ * This file can be modified by licensees according to the
+ * product manual.
+ * FOURJS_END_COPYRIGHT */
+
+ .gbc_CustomMainContainerWidget {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    > header {
+      padding: 2px;
+      font-size: large;
+      //background-color: $theme-primary-background-color;
+      //color: $theme-primary-color;
+      color: $palette-primary-900;
+      background-color: $theme-primary-color;
+      text-align: center;
+      > div.CustomHeaderBarParent {
+            width: 100%;
+            display: flex;
+            height: 42px;
+
+            div.CustomHeaderLeft {
+                display: flex;
+                width: 33%;
+                min-width: 200px;
+                img.CustomHeaderLogo {
+                   @debug $theme-primary-background-color;
+                   @debug $theme-primary-background-color == #634ba1;
+                   @if $theme-primary-background-color == #634ba1 { //haze
+                      content: url('$$RES/img/genero-logo-haze.png');
+                   } @else if $theme-primary-background-color == #457105 { //grass
+                      content: url('$$RES/img/genero-logo-grass.png');
+                   } @else if $theme-primary-background-color == #a00f0f { //tomato
+                      content: url('$$RES/img/genero-logo-tomato.png');
+                   } @else if $theme-primary-background-color == #0037dd { //ocean
+                      content: url('$$RES/img/genero-logo-ocean.png');
+                   } @else if $theme-primary-background-color == #2f2f2f { //charcoal
+                      content: url('$$RES/img/genero-logo-charcoal.png');
+                   } @else {
+                      content: url('$$RES/img/genero_logo.png');
+                   }
+                }
+                > div.CustomHeaderTitle {
+                    display: block;
+                    padding-left: 8px;
+                    padding-top: 3px;
+                    > div {
+                        display: block;
+                    }
+                    > div.CustomHeaderMainTitle {
+                        font-size: large;
+                    }
+                    > div.CustomHeaderSubTitle {
+                        font-size: x-small;
+                    }
+
+                }
+            }
+            div.CustomHeaderMiddle {
+                text-align: center;
+                font-size: x-large;
+                width: 34%;
+                padding-top:3px;
+            }
+            div.CustomHeaderRight {
+                display: flex;
+                width: 33%;
+                min-width: 200px;
+                flex-direction: row-reverse;
+                padding: 0px 8px;
+                img.CustomHeaderLogoutImage {
+                    display: flex;
+                    content: url('$$RES/img/logout.svg');
+                    padding: 0px 4px;
+                }
+                div {
+                    display: flex;
+                    padding: 0px 4px;
+                }
+                div.CustomHeaderLogout {
+                    border: 1px solid $theme-primary-faded-background-color;
+                    color: $theme-primary-color;
+                    background-color: $palette-primary-900;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $palette-primary-500;
+                    }
+                    > div {
+                        padding-top: 9px;
+                        font-size: medium;
+                    }
+                }
+                div.CustomHeaderLogout.hidden {
+                    display: none;
+                }
+            }
+        }
+
+    }
+    > .containerElement {
+      flex: 1 1 0px;
+      position: relative;
+    }
+    > footer {
+      padding: 2px;
+      background-color: $theme-primary-background-color;
+      color: $theme-primary-color;
+      text-align: center;
+      border-top: 2px solid $theme-primary-faded-background-color;
+      > div.CustomFooterBarParent {
+        width: 100%;
+        display: flex;
+
+        div.CustomFooterLeft {
+            display: flex;
+            width: 70%;
+            padding: 0px 8px;
+
+            div {
+                display: flex;
+                padding: 0px 10px;
+            }
+
+        }
+        div.CustomFooterRight {
+            display: flex;
+            width: 30%;
+            flex-direction: row-reverse;
+            padding: 0px 8px;
+
+            a {
+                color: $theme-primary-color;
+                &:hover {
+                    text-decoration: underline;
+                    font-weight: 200;
+                }
+            }
+        }
+
+      }
+
+    }
+}

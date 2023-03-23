@@ -1,0 +1,38 @@
+.CustomWindowMenu {
+    cursor: pointer;
+    padding: 2px 6px;
+    display: flex;
+    justify-content: center;
+    &.hidden {
+        display: none;
+    }
+
+    i {
+        padding-top: 10px;
+    }
+
+    .CustomAppCount {
+        display: inline-block;
+        text-align: center;
+        line-height: 1.5em;
+        border-radius: 10px;
+        background-color: $theme-primary-faded-background-color;
+        color: $palette-primary-900;
+        height: 20px;
+        width: 20px;
+        font-size: small;
+        font-weight: bold;
+        margin-left: -6px;
+    }
+}
+
+.gbc_ChromeBarTitleWidget {
+    padding-right: 5px !important;
+}
+
+.gbc_SessionEndWidget {
+
+   .CustomWindowMenu {
+        display: none !important;
+   }
+}

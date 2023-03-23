@@ -1,0 +1,18 @@
+.zmdi-minus-box:before,
+.gbc_CheckBoxWidget .zmdi.indeterminate:before,
+.gbc_CheckBoxWidget .gbc_RTableWidget[viewType="classic"] .gbc_TableDataGroup .gbc_RTableRowWidget
+.gbc_RTableItemWidget .indeterminate.gbc_TreeAnchor:before,
+.gbc_RTableWidget[viewType="classic"] .gbc_TableDataGroup .gbc_RTableRowWidget .gbc_RTableItemWidget
+.gbc_CheckBoxWidget .indeterminate.gbc_TreeAnchor:before,
+.gbc_CheckBoxWidget .indeterminate.gbc_TreeAnchor:before,
+.gbc_ThreeStateCheckBoxWidget .zmdi.indeterminate:before,
+.gbc_ThreeStateCheckBoxWidget .gbc_RTableWidget[viewType="classic"] .gbc_TableDataGroup .gbc_RTableRowWidget
+.gbc_RTableItemWidget .indeterminate.gbc_TreeAnchor:before,
+.gbc_RTableWidget[viewType="classic"] .gbc_TableDataGroup .gbc_RTableRowWidget .gbc_RTableItemWidget
+.gbc_ThreeStateCheckBoxWidget .indeterminate.gbc_TreeAnchor:before,
+.gbc_ThreeStateCheckBoxWidget .indeterminate.gbc_TreeAnchor:before {
+    color: $theme-primary-background-color;
+}
+.gbc_CheckBoxWidget .zmdi.indeterminate.disabled:before {
+    color: inherit;
+}
