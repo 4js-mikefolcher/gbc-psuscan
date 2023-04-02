@@ -12,9 +12,18 @@
  @import "CustomButtons";
  @import "CustomFields";
  @import "CustomCards";
- @import "CustomLoadingBar";
  @import "CustomContainer";
  @import "CustomChromeBar";
  @import "CustomDateTimeEditWidget";
  @import "CustomCheckBox";
+
+ //Loading animations
+ @import "CustomLoadingBase";
+ @import "CustomLoadingBar";
+ @import "CustomLoadingRing";
+ @import "CustomLoadingRoller";
+ @import "CustomLoadingEllipsis";
+ @import "CustomLoadingSpinner";
+ @import "CustomLoadingGrid";
+
 

@@ -1,0 +1,92 @@
+/*
+Loading animation was adapted from Pure CSS Loaders
+https://loading.io/css/
+*/
+
+/* Loading variables */
+$lds-ellipsis-duration: 1s;
+
+.processing {
+
+   .loading-bar.lds-ellipsis {
+      display: inline-block;
+      position: absolute;
+      width: $lds-size;
+      height: $lds-size;
+      z-index: $lds-parent-z-index;
+      top: $lds-parent-top;
+      left: $lds-parent-left;
+      background-color: $lds-parent-background-color;
+      
+      div {
+
+         position: absolute;
+         top: 33px;
+         width: 16px;
+         height: 16px;
+         border-radius: 50%;
+         background: $lds-base-color;
+         animation-timing-function: cubic-bezier(0, 1, 1, 0);
+         animation-delay: $lds-spin-delay;
+         animation-duration: $lds-ellipsis-duration;
+         opacity: 0;
+
+        &:nth-child(1) {
+          left: 8px;
+          animation: lds-ellipsis1 0.6s infinite;
+        }
+
+        &:nth-child(2) {
+          left: 8px;
+          animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        &:nth-child(3) {
+          left: 32px;
+          animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        &:nth-child(4) {
+          left: 56px;
+          animation: lds-ellipsis3 0.6s infinite;
+        }
+
+      }
+   }     
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+    opacity: 1.0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1.0;
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+    opacity: 1.0;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 1.0;
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1.0;
+  }
+  100% {
+    transform: translate(24px, 0);
+    opacity: 1.0;
+  }
+}
+
+.processing:not(.inactiveWindow) .loading-bar.lds-ellipsis {
+        -webkit-animation: lds-parent $lds-ellipsis-duration cubic-bezier(0, 1, 1, 0) $lds-spin-delay infinite;
+        animation: lds-parent $lds-ellipsis-duration cubic-bezier(0, 1, 1, 0) $lds-spin-delay infinite;
+}

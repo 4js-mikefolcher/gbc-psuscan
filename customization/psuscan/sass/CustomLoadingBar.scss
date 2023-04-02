@@ -5,11 +5,11 @@ $spinner-offset-color: $palette-primary-50;
 $spinner-spin-duration: 750ms;
 $spinner-spin-delay: 1s;
  
-.processing .loading-bar {
+.processing .loading-bar.default {
     position: fixed;
     z-index: 9999;
     top: 40%;
-    left: 50%;
+    left: 45%;
  
     border-radius: 50%;
     width: $spinner-size;
@@ -36,7 +36,13 @@ $spinner-spin-delay: 1s;
 
 }
  
-.processing:not(.inactiveWindow) .loading-bar {
+.processing:not(.inactiveWindow) .loading-bar.default {
         -webkit-animation: spin-loader $spinner-spin-duration $spinner-spin-delay infinite;
         animation: spin-loader $spinner-spin-duration $spinner-spin-delay infinite;
+}
+
+.processing:not(.inactiveWindow) div.loading-bar {
+        -webkit-animation: none;
+        animation: none;
+        opacity: 0;
 }

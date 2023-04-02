@@ -32,11 +32,17 @@ This is a list of the elements and behaviors customized in this repo
    - Blue Ocean XL
    - Black Charcoal
    - Black Charcoal XL
+- Add multiple loading animations from https://loading.io/css/, change the animations in CustomLoadingAnimation.js
+   - Ring
+   - Ellipsis
+   - Spinner
+   - Roller
+   - Grid
 
 ## TODO Items
 The following items are planned but have not been implemented yet.
 - Hide the application navigation when the application is using the tabbed container mode
 - Add a user settings icon and context menu to the header bar
-- Enhance the loading animated spinning wheel
+- ~~Enhance the loading animated spinning wheel~~
 - Add an orange crush color theme
 
