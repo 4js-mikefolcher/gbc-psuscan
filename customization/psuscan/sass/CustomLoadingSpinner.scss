@@ -15,11 +15,14 @@ https://loading.io/css/
       top: $lds-parent-top;
       left: $lds-parent-left;
       background-color: $lds-parent-background-color;
+      border-radius: $lds-parent-border-radius;
+      border: $lds-parent-border-size solid transparent;
       
       div {
          animation: lds-spinner $lds-spin-duration linear $lds-spin-delay infinite;
          transform-origin: 40px 40px;
          opacity: 0;
+         margin: 16px;
 
          &:after {
            content: " ";

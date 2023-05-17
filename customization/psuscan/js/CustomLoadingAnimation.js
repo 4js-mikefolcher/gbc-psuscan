@@ -12,4 +12,4 @@ gbc.constants.loadingAnimations = {
   spinner: { style: 'lds-spinner', divCount: 12 },
   grid: { style: 'lds-grid', divCount: 9 }
 };
-gbc.constants.activeAnimation = gbc.constants.loadingAnimations.ellipsis;
+gbc.constants.activeAnimation = gbc.constants.loadingAnimations.roller;

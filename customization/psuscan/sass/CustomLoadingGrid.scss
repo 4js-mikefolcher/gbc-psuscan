@@ -14,6 +14,8 @@ https://loading.io/css/
       top: $lds-parent-top;
       left: $lds-parent-left;
       background-color: $lds-parent-background-color;
+      border-radius: $lds-parent-border-radius;
+      border: $lds-parent-border-size solid transparent;
       
       div {
          position: absolute;
@@ -24,56 +26,56 @@ https://loading.io/css/
          animation: lds-grid $lds-spin-duration linear infinite;
 
          &:nth-child(1) {
-           top: 8px;
-           left: 8px;
+           top: 24px;
+           left: 24px;
            animation-delay: 0s;
          }
 
          &:nth-child(2) {
-           top: 8px;
-           left: 32px;
+           top: 24px;
+           left: 48px;
            animation-delay: -0.4s;
          }
 
          &:nth-child(3) {
-           top: 8px;
-           left: 56px;
+           top: 24px;
+           left: 72px;
            animation-delay: -0.8s;
          }
 
          &:nth-child(4) {
-           top: 32px;
-           left: 8px;
+           top: 48px;
+           left: 24px;
            animation-delay: -0.4s;
          }
 
          &:nth-child(5) {
-           top: 32px;
-           left: 32px;
+           top: 48px;
+           left: 48px;
            animation-delay: -0.8s;
          }
 
          &:nth-child(6) {
-           top: 32px;
-           left: 56px;
+           top: 48px;
+           left: 72px;
            animation-delay: -1.2s;
          }
 
          &:nth-child(7) {
-           top: 56px;
-           left: 8px;
+           top: 72px;
+           left: 24px;
            animation-delay: -0.8s;
          }
 
          &:nth-child(8) {
-           top: 56px;
-           left: 32px;
+           top: 72px;
+           left: 48px;
            animation-delay: -1.2s;
          }
 
          &:nth-child(9) {
-           top: 56px;
-           left: 56px;
+           top: 72px;
+           left: 72px;
            animation-delay: -1.6s;
          }
 

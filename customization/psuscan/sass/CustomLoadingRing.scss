@@ -14,6 +14,8 @@ https://loading.io/css/
       top: $lds-parent-top;
       left: $lds-parent-left;
       background-color: $lds-parent-background-color;
+      border-radius: $lds-parent-border-radius;
+      border: $lds-parent-border-size solid transparent;
       
       div {
 
@@ -22,7 +24,7 @@ https://loading.io/css/
         position: absolute;
         width: 64px;
         height: 64px;
-        margin: 8px;
+        margin: 24px;
         border: 8px solid $lds-base-color;
         border-radius: 50%;
         animation: lds-ring $lds-spin-duration cubic-bezier(0.5, 0, 0.5, 1) $lds-spin-delay infinite;
@@ -30,15 +32,15 @@ https://loading.io/css/
         opacity: 0;
 
         &:nth-child(1) {
-           animation-delay: -1.45s;
+           animation-delay: -0.45s;
         }
 
         &:nth-child(2) {
-           animation-delay: -1.3s;
+           animation-delay: -0.3s;
         }
         
         &:nth-child(3) {
-           animation-delay: -1.15s;
+           animation-delay: -0.15s;
         }
 
       }

@@ -1,12 +1,15 @@
 //Define Animation Variables
-$lds-size: 80px;
+$lds-size: 120px;
 $lds-base-color: $palette-primary-900;
 $lds-spin-duration: 1.2s;
 $lds-spin-delay: 1s;
 $lds-parent-top: 40%;
 $lds-parent-left: 40%;
 $lds-parent-z-index: 9999;
-$lds-parent-background-color: transparent;
+//$lds-parent-background-color: transparent;
+$lds-parent-background-color:  #f2f2f2;
+$lds-parent-border-radius: 12px;
+$lds-parent-border-size: 3px;
 
 @keyframes lds-parent {
   0% {

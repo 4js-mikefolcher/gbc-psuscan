@@ -17,11 +17,14 @@ $lds-ellipsis-duration: 1s;
       top: $lds-parent-top;
       left: $lds-parent-left;
       background-color: $lds-parent-background-color;
+      border-radius: $lds-parent-border-radius;
+      border: $lds-parent-border-size solid transparent;
       
       div {
 
          position: absolute;
-         top: 33px;
+         top: 50px;
+         left: 50px;
          width: 16px;
          height: 16px;
          border-radius: 50%;
@@ -32,22 +35,22 @@ $lds-ellipsis-duration: 1s;
          opacity: 0;
 
         &:nth-child(1) {
-          left: 8px;
+          left: 24px;
           animation: lds-ellipsis1 0.6s infinite;
         }
 
         &:nth-child(2) {
-          left: 8px;
+          left: 24px;
           animation: lds-ellipsis2 0.6s infinite;
         }
 
         &:nth-child(3) {
-          left: 32px;
+          left: 48px;
           animation: lds-ellipsis2 0.6s infinite;
         }
 
         &:nth-child(4) {
-          left: 56px;
+          left: 72px;
           animation: lds-ellipsis3 0.6s infinite;
         }
 
