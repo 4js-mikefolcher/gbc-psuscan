@@ -1,6 +1,5 @@
 .gbc_MessageWidget {
    transition: all 0.75s cubic-bezier(0.68, -0.55, 0.25, 1.35);
-   //animation: 0.75s message-motion 0s 1 both cubic-bezier(0.68, -0.55, 0.25, 1.35);
    animation: message-motion 0.75s 0s 1 cubic-bezier(0.68, -0.55, 0.25, 1.35);
 }
 

@@ -1,3 +1,41 @@
 .mt-card {
     border-radius: 8px !important;
+
+    &.mt-dialog-pane {
+        transition: all 0.75s cubic-bezier(0.68, -0.55, 0.25, 1.35);
+        animation: dialog-motion 0.75s 0s 1 cubic-bezier(0.68, -0.55, 0.25, 1.35);
+    }
 }
+
+
+
+.gbc_ModalWindowDialog {
+    .mt-card.mt-dialog-pane {
+        animation: dialog-motion 0.75s 0s 1 cubic-bezier(0.68, -0.55, 0.25, 1.35);
+    }
+}
+
+.gbc_ModalMenuDialog {
+    .mt-card.mt-dialog-pane {
+        animation: menu-motion 1.5s 0s 1 cubic-bezier(0.68, -0.55, 0.25, 1.35);
+    }
+}
+
+@keyframes dialog-motion {
+    0% {
+      top: -200px;
+    }
+    100% {
+      top: 0px;
+    }
+}
+
+@keyframes menu-motion {
+    0% {
+      top: -500px;
+    }
+    100% {
+      top: 0px;
+    }
+}
+
