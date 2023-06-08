@@ -6,29 +6,13 @@
 
 .gbc_ModalWindowDialog {
     .mt-card.mt-dialog-pane {
-        animation: dialog-motion 0.5s 0s 1 linear;
-    }
-}
-
-.gbc_ModalMenuDialog {
-    .mt-card.mt-dialog-pane {
-        /* animation: menu-motion 1.5s 0s 1 cubic-bezier(0.68, -0.55, 0.25, 1.35); */
-        animation: menu-motion 0.75s 0s 1 linear;
+        animation: dialog-motion 1.0s 0s 1 linear;
     }
 }
 
 @keyframes dialog-motion {
     0% {
-      top: -400px;
-    }
-    100% {
-      top: 0px;
-    }
-}
-
-@keyframes menu-motion {
-    0% {
-      top: -400px;
+      top: -500px;
     }
     100% {
       top: 0px;
