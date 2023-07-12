@@ -24,6 +24,19 @@ modulum('CustomRTableWidget', ['RTableWidget', 'WidgetFactory'],
       return /** @lends classes.CustomRTableWidget.prototype */ {
  
         __name: "RTableWidget",
+        _operationHandler: null,
+
+        /**
+         * @inheritDoc
+         */
+        _initElement: function() {
+          $super._initElement.call(this);
+
+          //Add table operations event handler
+          const session = context.SessionService.getCurrent();
+          if (session) this._operationHandler = session.when(context.constants.customTableOperations.EventName, this._onTableOperation.bind(this));
+
+        },
  
         fillContextMenu: function(contextMenu, opts) {
           //First, call super fillContextMenu
@@ -64,7 +77,37 @@ modulum('CustomRTableWidget', ['RTableWidget', 'WidgetFactory'],
           }
  
         },
+
+        _onTableOperation: function(event, session, tableOp) {
+          //Frontcall Table Operation Handler
+          if (tableOp.tableName && this._auiName && tableOp.tableName === this._auiName) {
+              if (tableOp.operationName) {
+
+                if (tableOp.operationName === context.constants.customTableOperations.ResetSort) {
+                  //Trigger reset sort event
+                  this.emit(context.constants.widgetEvents.tableHeaderSort, -1);
+
+                } else if (tableOp.operationName === context.constants.customTableOperations.ResetSettings) {
+                  //Trigger the reset default settings event
+                  this.emit(context.constants.widgetEvents.tableResetToDefault);
+
+                } else if (tableOp.operationName === context.constants.customTableOperations.AutoFitColumns) {
+                  //Call autoFitAllColumns() method
+                  this.autoFitAllColumns();
+
+                } else if (tableOp.operationName === context.constants.customTableOperations.FitToViewColumns) {
+                  //Call fitToViewAllColumns() method
+                  this.fitToViewAllColumns();
+                }
+
+              }
+
+          }
+        },
+
         destroy: function() {
+          //release reference to the table operation event handler
+          this._operationHandler = null;
           $super.destroy.call(this);
         }
       };
