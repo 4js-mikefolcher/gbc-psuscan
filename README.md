@@ -38,6 +38,11 @@ This is a list of the elements and behaviors customized in this repo
    - Spinner
    - Roller
    - Grid
+- Add the ability to trigger the following table operations from the server-side via frontcall
+   - Reset Sort Order
+   - Reset to Default Settings
+   - Auto Fit All Columns
+   - Fit to View All Columns
 
 ## TODO Items
 The following items are planned but have not been implemented yet.
